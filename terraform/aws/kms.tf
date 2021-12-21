@@ -1,5 +1,6 @@
 resource "aws_kms_key" "logs_key" {
   # key does not have rotation enabled
+  #zs:skip=AC_AWS_309 skip
   description = "${local.resource_prefix.value}-logs bucket key"
 
   deletion_window_in_days = 7
