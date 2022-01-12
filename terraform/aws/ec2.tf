@@ -296,7 +296,7 @@ output "vpc_id" {
   description = "The ID of the VPC"
   value       = aws_vpc.web_vpc.id
 }
-
+#check terragoat
 output "public_subnet" {
   description = "The ID of the Public subnet"
   value       = aws_subnet.web_subnet.id
